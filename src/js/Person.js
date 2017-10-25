@@ -38,3 +38,11 @@ personObj.getPersonLog.apply({
 	'name': 'Terry',
 	'dept': 'Information Technology'
 }, ['Hi', 'Programmer']);
+
+//using bind method
+var bindRef = personObj.getPersonLog.bind({
+		'name': 'Perry',
+		'dept': 'Income Tax'
+	}, 'Hi', 'Clerk');
+
+bindRef();
