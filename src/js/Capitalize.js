@@ -3,9 +3,8 @@
  *	alternate capitalization for the text content.
  *	@method Capitalize
  */
-var Capitalize = function () {
-	var str = 'I will see you in 2wo years',
-	arr = str.split(' '),
+var Capitalize = function (str) {
+	var arr = str.split(' '),
 	resultStr = '',
 	result = [];
 
@@ -29,4 +28,4 @@ var Capitalize = function () {
 	}
 	console.log(resultStr);
 };
-Capitalize();
+Capitalize('I will see you in 2wo years');
