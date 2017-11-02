@@ -53,7 +53,7 @@ var copyArr = numArr;
 copyArr.push(5);
 console.log("numArr = " + numArr, "copyArr = " + copyArr); // both arrays are same because it shares the same referance
 
-// Method 1
+// Method 1 - copy begin to end
 /*	The slice() method returns a shallow copy of a portion of an array into a new array.
  * object selected from begin to end (end not included).
  * The original array will not be modified.
@@ -62,12 +62,12 @@ copyArr = numArr.slice(0, numArr.length);
 copyArr.push(6);
 console.log("numArr = " + numArr, "copyArr = " + copyArr);
 
-// Method 2
+// Method 2 - copy begin to default end length 
 copyArr = numArr.slice(0);
 copyArr.push(7);
 console.log("numArr = " + numArr, "copyArr = " + copyArr);
 
-// Method 3
+// Method 3 - copy the entire array
 copyArr = numArr.slice();
 copyArr.push(8);
 console.log("numArr = " + numArr, "copyArr = " + copyArr);
