@@ -4,3 +4,5 @@ Exploring the horizon of functional programming with javascript. Javascript very
 # Capitalization
 
 # call(), apply() and bind()
+
+# slice() 
