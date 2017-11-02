@@ -46,3 +46,28 @@ var bindRef = personObj.getPersonLog.bind({
 	}, 'Hi', 'Clerk');
 
 bindRef();
+
+ ##  ##  ##  ##  ##  ##  ## Array Copy Method ##  ##  ##  ##  ##  ##  ##
+var numArr = [1, 2, 3, 4];
+var copyArr = numArr;
+copyArr.push(5);
+console.log("numArr = " + numArr, "copyArr = " + copyArr); // both arrays are same because it shares the same referance
+
+// Method 1
+/*	The slice() method returns a shallow copy of a portion of an array into a new array.
+ * object selected from begin to end (end not included).
+ * The original array will not be modified.
+ */
+copyArr = numArr.slice(0, numArr.length);
+copyArr.push(6);
+console.log("numArr = " + numArr, "copyArr = " + copyArr);
+
+// Method 2
+copyArr = numArr.slice(0);
+copyArr.push(7);
+console.log("numArr = " + numArr, "copyArr = " + copyArr);
+
+// Method 3
+copyArr = numArr.slice();
+copyArr.push(8);
+console.log("numArr = " + numArr, "copyArr = " + copyArr);
