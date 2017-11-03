@@ -6,3 +6,5 @@ Exploring the horizon of functional programming with javascript. Javascript very
 # call(), apply() and bind()
 
 # slice() 
+
+# Load mask using css styles
