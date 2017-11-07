@@ -9,3 +9,4 @@ Logicla implementation of alternative capitalize the letter form a paragraph, in
 Array copy using slice() method in javascript
 
 # Load mask using css styles
+css style for load mask using css animation.
