@@ -33,3 +33,8 @@ var NumOperation = function (valArr) {
 	};
 
 };
+
+//Initialize object
+var numObj = new NumOperation([2,4,1,67,23]);
+numObj.sum().sort().mean();
+console.log(numObj.sumVal,' sorted value:: '+numObj.valArr, ' Mean value:: '+ numObj.meanVal );
