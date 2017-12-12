@@ -1,7 +1,7 @@
 /**
  *	myArray object helps to describe various usage
  *	of array and operation associated with arrays
- *	
+ *
  */
 var myArray = {
 	// initializing the array using constructor invocation
@@ -26,8 +26,16 @@ var myArray = {
 	useShift: function () {
 		this.arr.shift();
 	},
-	// Splice operation for add/remove items 
+	// Splice operation for add/remove items
 	useSplice: function (index, count, items) {
 		this.arr.splice(index, count, items);
 	}
-}
+};
+
+// Usage explanations
+myArray.getArr();
+myArray.usePush('END');
+myArray.useUnShift('START');
+myArray.usePop();
+myArray.useShift();
+myArray.useSplice(1, 1);
